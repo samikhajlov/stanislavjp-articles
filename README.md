@@ -56,7 +56,7 @@ https://www.linkedin.com/in/stas9002/
 
 このノートは GitHub Pages で閲覧できます：
 
-https://samikhajlov.github.io/YOUR_REPO/
+https://samikhajlov.github.io/stanislavjp-articles/
 
 ※ ご自身のURLに置き換えてください。
 
