@@ -1,13 +1,9 @@
 title: "Stanislav.jp Web制作・SEOノート"
-description: "東京でWeb制作・SEO・マーケ支援を行う中で気づいたことを書き留めるノートです。"
-theme: jekyll-theme-cayman
+description: "東京でWeb制作とSEOの仕事をしながら気づいたことや、よく聞かれる質問をまとめたメモです。"
 
-# 自分の環境に合わせて書き換えてください
-# 例）
-#   ユーザーサイト: https://stas9002.github.io → baseurl: ""
-#   プロジェクトサイト: https://stas9002.github.io/stanislavjp-notes → baseurl: "/stanislavjp-notes"
+# ВАЖНО: убираем theme: jekyll-theme-cayman, чтобы не мешал
 url: "https://samikhajlov.github.io"
-baseurl: "/REPOSITORY"  # ユーザー用サイトの場合は "" にする
+baseurl: "/stanislavjp-articles"
 
 markdown: kramdown
 kramdown:
@@ -16,6 +12,12 @@ kramdown:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
 
 exclude:
   - Gemfile
