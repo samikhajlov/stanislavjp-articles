@@ -1,5 +1,6 @@
 ---
 title: "Stanislav.jp Web制作・SEOノート"
+<link rel="stylesheet" href="/stanislavjp-articles/assets/style.css">
 description: "東京でWeb制作とSEOの仕事をしながら気づいたことや、よく聞かれる質問をまとめたメモです。"
 ---
 
