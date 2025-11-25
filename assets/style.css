@@ -1,89 +1,115 @@
-/* Base */
+/* -----------------------------
+   RESET
+----------------------------- */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Inter", "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+html, body {
   margin: 0;
   padding: 0;
-  background: #f3f4f6;
+}
+
+/* -----------------------------
+   BASE
+----------------------------- */
+body {
+  font-family: "Inter", "Noto Sans JP", -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.85;
+  background: #f1f5f9; /* как на Stanislav.jp */
   color: #111827;
 }
 
-/* Layout */
-.site-wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* Контейнер как на Stanislav.jp */
+.site-main > * {
+  max-width: 960px;           /* Чуть шире для комфортного японского текста */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 22px;            /* воздух как на твоём WP */
 }
 
+/* -----------------------------
+   HEADER (минималистично)
+----------------------------- */
 .site-header {
-  padding: 18px 20px;
-  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
-  background: #ffffffcc;
-  backdrop-filter: blur(10px);
+  background: #ffffffdd;
+  backdrop-filter: blur(8px);
+  padding: 22px 20px 18px;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .site-logo {
   font-weight: 700;
-  letter-spacing: 0.05em;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+  color: #1e293b;
 }
 
 .site-subtitle {
   font-size: 0.85rem;
-  color: #6b7280;
-  margin-top: 4px;
+  color: #64748b;
+  margin-top: 2px;
 }
 
-.site-main {
-  flex: 1;
-  padding: 32px 16px 40px;
-}
-
-.site-main > * {
-  max-width: 880px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Content */
+/* -----------------------------
+   TYPOGRAPHY
+----------------------------- */
 main h1 {
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin: 2.4rem 0 1rem;
+  letter-spacing: -0.01em;
+  color: #0f172a;
 }
 
 main h2 {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.55rem;
+  font-weight: 600;
+  margin-top: 2.8rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.01em;
+  color: #1e293b;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.4rem;
 }
 
 main h3 {
   font-size: 1.25rem;
-  margin-top: 1.6rem;
-  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+  color: #334155;
 }
 
 p {
-  line-height: 1.8;
-  margin: 0.8rem 0;
+  margin: 1.1rem 0;
+  line-height: 1.85;
+  color: #1e293b;
 }
 
+/* Lists */
 ul, ol {
-  margin: 0.7rem 0 0.7rem 1.4rem;
-  padding-left: 0;
+  margin: 1rem 0 1rem 1.4rem;
 }
 
 li {
-  margin: 0.3rem 0;
+  margin: 0.45rem 0;
   line-height: 1.7;
 }
 
+/* HR как на твоём сайте */
+hr {
+  border: none;
+  max-width: 960px;
+  margin: 2.5rem auto;
+  height: 1px;
+  background: #e2e8f0;
+}
+
+/* Links */
 a {
   color: #2563eb;
   text-decoration: none;
@@ -93,28 +119,25 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Horizontal rule */
-hr,
-* + hr {
-  border: none;
-  border-top: 1px solid #e5e7eb;
-  margin: 2rem auto;
-  max-width: 880px;
-}
-
-/* Blockquote */
+/* -----------------------------
+   BLOCKQUOTE (фирменный)
+----------------------------- */
 blockquote {
-  margin: 1.5rem 0;
-  padding: 0.9rem 1rem;
+  margin: 1.8rem 0;
+  padding: 1rem 1.2rem;
   border-left: 4px solid #2563eb33;
-  background: #eff6ff;
-  color: #1f2933;
+  background: #f0f7ff;
+  color: #334155;
+  font-size: 0.98rem;
+  border-radius: 4px;
 }
 
-/* Code */
+/* -----------------------------
+   CODE
+----------------------------- */
 pre {
-  background: #111827;
-  color: #f9fafb;
+  background: #0f172a;
+  color: #f8fafc;
   padding: 1rem;
   border-radius: 8px;
   overflow-x: auto;
@@ -122,41 +145,42 @@ pre {
 }
 
 code {
-  background: #e5e7eb;
+  background: #e2e8f0;
   padding: 2px 5px;
   border-radius: 4px;
   font-size: 0.9rem;
 }
 
-/* Footer */
+/* -----------------------------
+   FOOTER
+----------------------------- */
 .site-footer {
-  border-top: 1px solid #e5e7eb;
-  padding: 12px 20px;
+  border-top: 1px solid #e2e8f0;
+  padding: 16px 22px;
   font-size: 0.85rem;
-  color: #6b7280;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #f9fafb;
+  color: #64748b;
+  text-align: center;
+  background: #f8fafc;
 }
 
 .site-footer a {
-  color: #4b5563;
+  color: #475569;
 }
 
-/* Responsive */
-@media (max-width: 640px) {
-  .site-main {
-    padding: 24px 14px 28px;
-  }
-
+/* -----------------------------
+   RESPONSIVE
+----------------------------- */
+@media (max-width: 720px) {
   main h1 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    margin-top: 2rem;
   }
 
-  .site-footer {
-    flex-direction: column;
-    gap: 4px;
-    text-align: center;
+  main h2 {
+    font-size: 1.35rem;
+  }
+
+  .site-main > * {
+    padding: 0 16px;
   }
 }
