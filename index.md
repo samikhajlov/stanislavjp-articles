@@ -37,7 +37,7 @@ description: "東京でWeb制作とSEOの仕事をしながら気づいたこと
 
 ### SEO
 
-- [2025年以降のSEO戦略：日本向けに本当に効果がある実践アプローチ](./articles/seo/2025-seo-strategy-japan.md)
+- [2025年以降のSEO戦略：日本向けに本当に効果がある実践アプローチ](./articles/2025-seo-strategy-japan.md)
 - [テクニカルSEOでまず確認するポイント](./articles/seo/technical-seo-checklist.md)
 
 ### Web制作
