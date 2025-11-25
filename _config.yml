@@ -6,7 +6,7 @@ theme: jekyll-theme-cayman
 # 例）
 #   ユーザーサイト: https://stas9002.github.io → baseurl: ""
 #   プロジェクトサイト: https://stas9002.github.io/stanislavjp-notes → baseurl: "/stanislavjp-notes"
-url: "https://USERNAME.github.io"
+url: "https://samikhajlov.github.io"
 baseurl: "/REPOSITORY"  # ユーザー用サイトの場合は "" にする
 
 markdown: kramdown
