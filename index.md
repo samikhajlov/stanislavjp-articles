@@ -46,7 +46,7 @@ description: "東京でWeb制作やSEOの仕事をしながら気づいたこと
 
 ### マーケティング / 集客
 
-- [小さなビジネスがオンライン集客を始める前に決めたいこと](./articles/marketing/small-business-leads.md)
+- [小さなビジネスがオンライン集客を始める前に決めたいこと](./articles/small-business-lead.md)
 
 ### ケース / 実例
 
